@@ -38,24 +38,33 @@ p{
 
 header{
     margin: auto;
-    width: 90%; /* 90% da tela */
+    margin-top: 32px;
+
+    /* width: 90%; /* 90% da tela */
     /* max-width: 580px; Tamanho máximo dos cartões */
 
-    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
-    border-radius: 50%;
+    /* background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%; */ */
 
+}
+
+/* Borda colorida na imagem do criador */
+header div {
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding: 4px;
+    border-radius: 50%;
+    display: flex;
 }
 main{
     max-width: 580px; /* Tamanho máximo dos cartões */
     width: 90%; /* 90% da tela */
-    margin: auto;
+    margin: 32px auto; /* 32px cima e embaixo e auto para esquerda e direita  */
 
     display: flex;
     flex-direction: column;
     /* display: grid    ** Faz o mesmo que as duas linhas de cima*/ 
     gap: 24px; /* Dá espaço entre os elementos dentro do main (precisa do "display: flex" para habilitar */ 
 
-    margin-top: 32px;
 }
 
 /* main * {
